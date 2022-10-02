@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Miguel Sanz Jiménez - Translations</title>
 
-    <link rel="icon" type="image/x-icon" href="signature-transparent.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -23,75 +23,39 @@
     <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
     <style>
         body {
-            color: white;
+            background-color: rgb(212, 243, 253);
+            color: #000;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: rgb(0, 0, 0);
             height: 100vh;
-            text-align: center;
         }
 
         html {
             scroll-behavior: smooth;
         }
 
-        h1 {
-            margin: 5px;
-        }
-
         h2 {
-            text-align: left;
+            font-size: 2rem;
+            margin-top: 3rem;
         }
 
-        .translations-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        h3 {
+            font-size: 1rem;
         }
 
-        .about-photos-top-container {
-            margin: 15px;
-        }
-
-        .about-photos {
-
-            width: 60%;
-        }
-
-        .about-img {
-            width: 80%;
-        }
-
-        .btn {
-            margin-bottom: 50px;
-        }
-
-        .btn:hover {
-            background-color: white;
-            color: black;
-
-        }
-
-                /*translations*/
-                .translation_title {
+        /*translations*/
+        .translation_title {
             text-align: center;
         }
 
         .translation-text {
-            margin: 10px 20px;
+            text-align: center;
+            margin: 15px 25px;
         }
 
         .other-pic {
             width: 300px;
-        }
-
-        .other_container {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            padding: 20px 20px;
-            margin-bottom: 1rem;
         }
 
         .other_inner {
@@ -102,9 +66,7 @@
 
         .other_inner_text,
         .other_inner_pic {
-            text-align: left;
             width: 300px;
-            margin-bottom: 20px;
         }
 
         .other_inner_pic {
@@ -115,23 +77,36 @@
             opacity: .5;
         }
 
-
-        /*footer*/
-        .footer-text {
-            color: #fff;
-
+        /*books*/
+        .books,
+        .about,
+        .media,
+        .education_block,
+        .other_container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 20px 20px;
+            margin-bottom: 1rem;
         }
+
+
+
+        .carousel {
+            width: 300px;
+        }
+
+     
+        /*footer*/
+        .footer{
+            text-align: center;
+        }
+
 
         .footer-icon {
-            width: 60px;
-            height: 60px;
+            width: 20px;
+            height: 20px;
             margin-bottom: 20px;
-        }
-
-        .nav-icon {
-            width: 40px;
-            height: 40px;
-            margin: 0;
         }
     </style>
 </head>
@@ -144,8 +119,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="https://chrisratsabout.github.io/RevampHome/"><img class="nav-icon"
-                    src="./signature-transparent.png"></a>
+            <a class="navbar-brand" href="https://chrisratsabout.github.io/RevampHome/">Miguel Sanz Jiménez</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="https://chrisratsabout.github.io/RevampHome/">Home <span
@@ -155,7 +129,8 @@
                     <a class="nav-link" href="https://chrisratsabout.github.io/RevampAbout/">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="https://chrisratsabout.github.io/RevampTranslations/">Translations</a>
+                    <a class="nav-link active"
+                        href="https://chrisratsabout.github.io/RevampTranslations/">Translations</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://chrisratsabout.github.io/RevampMedia/">Media</a>
@@ -180,105 +155,162 @@
             <br>
             <br>
             <br>
-            <h1>Translations</h1>
-            <p class="translation-text">Below are books that Dr. Sanz Jiménez has translated. Click on the image for more info.</p>
-            <div class="about about-photos">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="https://www.trinivergaraediciones.com/Thriller+++Novela+Negra/Crimen+y+misterio++Novela+negra/Maldito+asfalto/2203ES"
-                                target="_blank">
-                                <img id="carousel_pic" class="d-block w-100" src="maldito.jpg"
-                                    alt="maldito">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://www.guillermoescolareditor.com/libro/john-barleycorn_124280/"
-                                target="_blank">
-                                <img id="carousel_pic" class="d-block w-100" src="memorias.jpg" alt="memorias">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://www.hojadelata.net/tienda/democracy-now/" target="_blank">
-                                <img id="carousel_pic" class="d-block w-100" src="democracy.jpg" alt="democracy">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://labibliotecadecarfax.com/producto/no-mires-ahora-y-otros-relatos/"
-                                target="_blank">
-                                <img id="carousel_pic" class="d-block w-100" src="nomires.jpg" alt="no-mires">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://www.hojadelata.net/tienda/el-pajaro-carpintero/" target="_blank">
-                                <img id="carousel_pic" class="d-block w-100" src="pajaro.jpg"
-                                    alt="carpintero">
-                            </a>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                  <h1>Other Translations</h1>
-                  <section id="hellpress-section">
-                    <div class="other_container">
-                        <div class="other_inner_text">
-                            <h2>Hellpress</h2>
-                            <p>Dr. Sanz Jiménez has collaborated with <i>Hellpress.com</i>, a Heavy Metal and Hard Rock news
-                                website. He has
-                                translated many interviews with international metal musicians into Spanish. More of his interviews
-                                can
-                                be found <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22" target="blank">here</a>.</p>
-                        </div>
-            
-                        <div class="other_inner_pic">
+            <h1 class="translation_title">Translations</h1>
+            <p class="translation-text">Below are books that Dr. Sanz Jiménez has translated. Click on the image for
+                more info.</p>
+            <section id="books-section">
+                <div class="books">
+                    <div class="books_info">
+                        <h2>Books</h2>
+                        <br>
+                        <a href="https://www.trinivergaraediciones.com/Thriller+++Novela+Negra/Crimen+y+misterio++Novela+negra/Maldito+asfalto/2203ES"
+                            target="_blank">
+                            <h3>Maldito asfalto</h3>
+                        </a>
 
-                            <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22" target="blank"><img class="other-pic"
-                                    src="hellpress1.png" alt="hellpress"></a>
-                        </div>
-                    </div>
-                </section>
-            
-                <section id="netflix-section">
-                    <div class="other_container">
-                        <div class="other_inner_text">
-                            <h2>Netflix</h2>
-                            <p>Additionally, he has translated subtitles for Netflix, the leading streaming service. The TV shows he
-                                has
-                                translated include the true crime <em>Fatal Attaction</em>. </p>
-                        </div>
-            
-                        <div class="other_inner_pic">
+                        <p>S.A. Cosby</p>
+                        <br>
+                        <a href="https://www.guillermoescolareditor.com/libro/john-barleycorn_124280/" target="_blank">
+                            <h3>John Barleycorn: Memorias de un alcohólico</h3>
+                        </a>
+                        <p>Jack London</p>
+                        <br>
+                        <a href="https://www.hojadelata.net/tienda/democracy-now/" target="_blank">
+                            <h3>Democracy Now!</h3>
+                        </a>
+                        <p>Amy Goodman</p>
+                        <br>
+                        <a href="https://labibliotecadecarfax.com/producto/no-mires-ahora-y-otros-relatos/"
+                            target="_blank">
+                            <h3>No mires ahora y otros relatos</h3>
+                        </a>
+                        <p>Daphne DuMaurier</p>
+                        <br>
+                        <a href="https://www.hojadelata.net/tienda/el-pajaro-carpintero/" target="_blank">
+                            <h3>El pájaro carpintero</h3>
+                        </a>
+                        <p>James McBride</p>
 
-                            <a href="subtitulos.JPG" target="blank"><img class="other-pic" src="subtitulos.JPG" alt="subtitles"></a>
-                        </div>
                     </div>
-                </section>
-            
-                <section id="plot-section">
-                    <div class="other_container">
-                        <div class="other_inner_text">
-                            <h2>Comics</h2>
-                            <p>Dr. Sanz Jiménez has shown interest in comic-books. For the magazine <i>Plot 2.0.</i>, he has
-                                translated comic
-                                strips and interviews with renowned cartoonists. </p>
+                    <div class="carousel_container">
+                        <br>
+                        <br>
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="https://www.trinivergaraediciones.com/Thriller+++Novela+Negra/Crimen+y+misterio++Novela+negra/Maldito+asfalto/2203ES"
+                                            target="_blank">
+                                            <img id="carousel_pic" class="d-block w-100" src="maldito-asfalto.png"
+                                                alt="maldito">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="https://www.guillermoescolareditor.com/libro/john-barleycorn_124280/"
+                                            target="_blank">
+                                            <img id="carousel_pic" class="d-block w-100" src="memorias.jpeg"
+                                                alt="memorias">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="https://www.hojadelata.net/tienda/democracy-now/" target="_blank">
+                                            <img id="carousel_pic" class="d-block w-100" src="democracy.jpeg"
+                                                alt="democracy">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="https://labibliotecadecarfax.com/producto/no-mires-ahora-y-otros-relatos/"
+                                            target="_blank">
+                                            <img id="carousel_pic" class="d-block w-100" src="no-mires.jpeg"
+                                                alt="no-mires">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="https://www.hojadelata.net/tienda/el-pajaro-carpintero/"
+                                            target="_blank">
+                                            <img id="carousel_pic" class="d-block w-100" src="pajaro-carpintero.jpeg"
+                                                alt="carpintero">
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
-            
-                        <div class="other_inner_pic">
 
-                            <a href="dateline.jpg" target="blank"><img class="other-pic" src="dateline.jpg" alt="dateline"></a>
-                        </div>
                     </div>
-                </section>
+                </div>
+            </section>
+            <h1 class="translation_title">Other Translations</h1>
+            <section id="hellpress-section">
+                <div class="other_container">
+                    <div class="other_inner_text">
+                        <h2>Hellpress</h2>
+                        <p>Dr. Sanz Jiménez has collaborated with <i>Hellpress.com</i>, a Heavy Metal and Hard Rock news
+                            website. He has
+                            translated many interviews with international metal musicians into Spanish. More of his
+                            interviews
+                            can
+                            be found <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22"
+                                target="blank">here</a>.</p>
+                    </div>
+
+                    <div class="other_inner_pic">
+
+                        <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22" target="blank"><img
+                                class="other-pic" src="hellpress1.png" alt="hellpress"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="netflix-section">
+                <div class="other_container">
+                    <div class="other_inner_text">
+                        <h2>Netflix</h2>
+                        <p>Additionally, he has translated subtitles for Netflix, the leading streaming service. The TV
+                            shows he
+                            has
+                            translated include the true crime <em>Fatal Attaction</em>. </p>
+                    </div>
+
+                    <div class="other_inner_pic">
+
+                        <a href="subtitulos.JPG" target="blank"><img class="other-pic" src="subtitulos.JPG"
+                                alt="subtitles"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="plot-section">
+                <div class="other_container">
+                    <div class="other_inner_text">
+                        <h2>Comics</h2>
+                        <p>Dr. Sanz Jiménez has shown interest in comic-books. For the magazine <i>Plot 2.0.</i>, he has
+                            translated comic
+                            strips and interviews with renowned cartoonists. </p>
+                    </div>
+
+                    <div class="other_inner_pic">
+
+                        <a href="dateline.jpg" target="blank"><img class="other-pic" src="dateline.jpg"
+                                alt="dateline"></a>
+                    </div>
+                </div>
+            </section>
+            <div class="footer">
                 <p class="footer-text">Copyright &#169; <span class="year">2002</span> | Miguel Sanz Jiménez</p>
-                <img class="footer-icon" src="signature-transparent.png" alt="icon">
+                <img class="footer-icon" src="favicon.ico" alt="icon">
             </div>
+
+        </div>
 
     </section>
 
