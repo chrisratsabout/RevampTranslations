@@ -38,10 +38,70 @@
         h2 {
             font-size: 2rem;
             margin-top: 3rem;
+            text-align: center;
+        }
+
+        #other-h2 {
+            margin-top: 0;
         }
 
         h3 {
             font-size: 1rem;
+        }
+
+        /* collage */
+
+        .collage-container {
+            max-width: 40%;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .top-row,
+        .bottom-row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .collage-photo {
+            height: 33%;
+            width: 33%;
+        }
+
+        .collage-cover {
+            opacity: .5;
+            height: 140px;
+            margin: 10px;
+        }
+
+        .collage-cover:hover {
+            transform: scale(1.1);
+            transition: ease-in, .3s;
+            transition: ease-out, .3s;
+            opacity: 1;
+            transition: linear, .3s;
+            box-shadow:
+                inset 0 0 20px #fff,
+                /* inner white */
+                inset 20px 0 20px rgb(4, 58, 120),
+                /* inner left magenta short */
+                inset -20px 0 20px rgb(4, 58, 120),
+                /* inner right cyan short */
+                inset 20px 0 60px rgb(4, 58, 120),
+                /* inner left magenta broad */
+                inset -20px 0 60px rgb(4, 58, 120),
+                /* inner right cyan broad */
+                0 0 30px #fff,
+                /* outer white */
+                -10px 0 20px rgb(4, 58, 120),
+                /* outer left magenta */
+                10px 0 20px rgb(4, 58, 120);
+            /* outer right cyan */
+
         }
 
         /*translations*/
@@ -96,9 +156,9 @@
             width: 300px;
         }
 
-     
+
         /*footer*/
-        .footer{
+        .footer {
             text-align: center;
         }
 
@@ -107,6 +167,58 @@
             width: 20px;
             height: 20px;
             margin-bottom: 20px;
+        }
+
+        /* translation card */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            flex-wrap: wrap;
+        }
+        .translation-card {
+            min-width: 300px;
+            border-radius: 10px;
+            width: 380px;
+            height: 500px;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 15px 15px 15px;
+
+        }
+
+        .card_inner_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            padding: 10px;
+        }
+
+        .card_inner_pic {
+            display: flex;
+            align-items: center;
+        }
+
+        .card-pic {
+            width: 250px;
+            height: 250px;
+            padding: 15px;
+        }
+
+        .netflix-card-pic {
+            width: 250px;
+            padding: 15px;
+        }
+
+        .comic-card-pic {
+            width: 180px;
+            height: 200px;
+            padding: 15px;
         }
     </style>
 </head>
@@ -119,30 +231,29 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="https://chrisratsabout.github.io/RevampHome/">Miguel Sanz Jiménez</a>
+            <a class="navbar-brand" href="https://miguelsanzjimenez.github.io/home/">Miguel Sanz Jiménez</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://chrisratsabout.github.io/RevampHome/">Home <span
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/home/">Home <span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://chrisratsabout.github.io/RevampAbout/">About</a>
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/about/">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active"
-                        href="https://chrisratsabout.github.io/RevampTranslations/">Translations</a>
+                    <a class="nav-link active" href="https://miguelsanzjimenez.github.io/translations/">Translations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://chrisratsabout.github.io/RevampMedia/">Media</a>
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/media/">Media</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://chrisratsabout.github.io/RevampEducation/">Education</a>
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/education/">Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://chrisratsabout.github.io/RevampGallery/">Gallery</a>
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/gallery/">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://chrisratsabout.github.io/RevampContact/">Contact</a>
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/contact/">Contact</a>
                 </li>
             </ul>
             </form>
@@ -250,10 +361,27 @@
                 </div>
             </section>
             <h1 class="translation_title">Other Translations</h1>
-            <section id="hellpress-section">
-                <div class="other_container">
-                    <div class="other_inner_text">
-                        <h2>Hellpress</h2>
+            <br>
+            <div class="card-container">
+                <div class="translation-card">
+                    <div class="card_inner_text">
+                        <h2 id="other-h2">Audiobooks</h2>
+                        <p>You can find Dr. Sanz Jiménez's work in audio form as well. His translation of <i>El
+                                pájaro carpintero</i> has been narrated for your listening pleasure in this <a
+                                href="https://www.penguinrandomhouse.com/books/724014/el-pajaro-carpintero-by-james-mcbride-translated-by-miguel-sanz-jimenez/">audiobook</a>.
+                        </p>
+                    </div>
+    
+                    <div class="card_inner_pic">
+    
+                        <a href="https://www.penguinrandomhouse.com/books/724014/el-pajaro-carpintero-by-james-mcbride-translated-by-miguel-sanz-jimenez/"
+                            target="blank"><img class="card-pic" src="audiobook.jpeg" alt="audiobook"></a>
+                    </div>
+                </div>
+
+                <div class="translation-card">
+                    <div class="card_inner_text">
+                        <h2 id="other-h2">Hellpress</h2>
                         <p>Dr. Sanz Jiménez has collaborated with <i>Hellpress.com</i>, a Heavy Metal and Hard Rock news
                             website. He has
                             translated many interviews with international metal musicians into Spanish. More of his
@@ -263,48 +391,46 @@
                                 target="blank">here</a>.</p>
                     </div>
 
-                    <div class="other_inner_pic">
+                    <div class="card_inner_pic">
 
                         <a href="https://www.hellpress.com/?s=%22sanz+jim%C3%A9nez%22" target="blank"><img
-                                class="other-pic" src="hellpress1.png" alt="hellpress"></a>
+                                class="card-pic" src="hellpress1.png" alt="hellpress"></a>
                     </div>
                 </div>
-            </section>
 
-            <section id="netflix-section">
-                <div class="other_container">
-                    <div class="other_inner_text">
-                        <h2>Netflix</h2>
+                <div class="translation-card">
+                    <div class="card_inner_text">
+                        <h2 id="other-h2">Netflix</h2>
                         <p>Additionally, he has translated subtitles for Netflix, the leading streaming service. The TV
                             shows he
                             has
                             translated include the true crime <em>Fatal Attaction</em>. </p>
                     </div>
 
-                    <div class="other_inner_pic">
+                    <div class="card_inner_pic">
 
-                        <a href="subtitulos.JPG" target="blank"><img class="other-pic" src="subtitulos.JPG"
+                        <a href="subtitulos.JPG" target="blank"><img class="netflix-card-pic" src="subtitulos.JPG"
                                 alt="subtitles"></a>
                     </div>
                 </div>
-            </section>
 
-            <section id="plot-section">
-                <div class="other_container">
-                    <div class="other_inner_text">
-                        <h2>Comics</h2>
+                <div class="translation-card">
+                    <div class="card_inner_text">
+                        <h2 id="other-h2">Comics</h2>
                         <p>Dr. Sanz Jiménez has shown interest in comic-books. For the magazine <i>Plot 2.0.</i>, he has
                             translated comic
                             strips and interviews with renowned cartoonists. </p>
                     </div>
 
-                    <div class="other_inner_pic">
+                    <div class="card_inner_pic">
 
-                        <a href="dateline.jpg" target="blank"><img class="other-pic" src="dateline.jpg"
+                        <a href="dateline.jpg" target="blank"><img class="comic-card-pic" src="dateline.jpg"
                                 alt="dateline"></a>
                     </div>
                 </div>
-            </section>
+            </div>
+
+        
             <div class="footer">
                 <p class="footer-text">Copyright &#169; <span class="year">2002</span> | Miguel Sanz Jiménez</p>
                 <img class="footer-icon" src="favicon.ico" alt="icon">
